@@ -1,0 +1,66 @@
+td.table-icons {
+    white-space: nowrap;
+}
+td.table-icons button i.fas {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 10px;
+  transition: all 200ms;
+  color: #bbbbbb;
+  visibility: hidden;
+}
+td.table-icons button:hover i.fas {
+    font-size: 17px;
+    line-height: 22px;
+    color: black;
+    pointer-events: auto;
+    position: relative;
+    cursor: pointer !important;
+}
+td.table-icons form {
+    display:inline-block !important;
+}
+td.table-icons form button {
+    border:0;
+    padding:0;
+}
+td.table-icons .table-submit {
+  background: none;
+  border: none !important;
+  padding: 0;
+}
+tr:hover > td.table-icons .fas {
+  visibility: visible;
+}
+.tooltip-holder {
+  display: inline-block;
+}
+.no-sort {
+  &::after {
+    display: none !important;
+  }
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+.highlight {
+  background-color: #7ab8ef !important;
+  color: white !important;
+  td.table-icons i.fas {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+table.dataTable {
+  thead {
+    .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
+      background-position: center left !important;
+    }
+  }
+  tbody td {
+    padding: 8px 10px 8px 19px !important;
+  }
+}

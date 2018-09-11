@@ -1,0 +1,133 @@
+@media screen and (max-width: 992px) {
+  .switch-holder {
+    position: static;
+    margin-bottom: 30px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+  .org-content {
+      &--domains {
+      div:first-of-type {
+        text-align: center;
+      }
+      div:last-of-type {
+        text-align: center;       
+      }
+    }
+    &--licences {
+      margin-bottom: 30px;
+    }
+    &--licences-used {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media all and (min-height: 640px) and (max-height: 740px) {
+  .onboarding {
+    margin: 0 auto 50px;
+  }
+}
+@media all and (min-width: 768px) {
+  .main {
+    padding: 40px 0 80px;
+  }
+  .register-modal .modal-dialog {
+    height: 100%;
+    width: 70vw;
+    max-width: 1100px;
+    max-height: 800px;
+    padding-top: 40px;
+  }
+  .register-modal .modal-dialog--mid {
+    max-width: 800px;
+    max-height: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin-left: 0;
+  }
+  #sidebar {
+    margin-left: -250px;
+    &.active {
+      margin-left: 0;
+    }
+  }
+  #sidebarCollapse {
+    display: inline-block;
+  }
+  #login .form-wrap {
+    width: 100%;
+  }
+  .top-nav {
+    margin-left: 0;
+    .title {
+      margin-left: 0;
+    }
+    h1 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  .button-holder {
+    padding-left: 0 !important;
+  }
+  .org-content {
+    &--licences {
+      text-align: center !important;
+    }
+    &--licences-used {
+      text-align: center !important;
+    }
+    .start-date-label, .end-date-label {
+      text-align: center !important;
+    }
+    .start-date, .end-date {
+      text-align: center !important;
+    }
+  }
+    .large-only {
+    display: none;
+  }
+  .register-modal.modal.show {
+    display: block !important;
+  }
+  .register-modal.modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+  .register-modal.modal-content .container {
+    max-width: 100%;
+  }
+  .register-modal.modal .modal-body {
+    height: 100vh;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .onboarding {
+    margin-top: 50px;
+  }
+  .onboarding-slide-image {
+    max-width: 145px;
+  }
+
+  .onboarding-slider {
+    margin-bottom: 30px;
+  }
+  .mobile-only {
+    display: inline-block;
+    color: white !important;
+    .btn-custom {
+      padding: 0px 70px;
+    }
+  }
+.hasRegistered-wrapper {
+  margin-top: 0;
+}
+}

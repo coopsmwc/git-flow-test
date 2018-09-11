@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,600,700,900');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: white;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.row-no-padding > [class*='col-'] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+main {
+	width: 100%;
+  position: relative;
+  margin-left: 250px;
+}
+#login-section {
+  margin-left: -250px !important;
+}
+.content {
+	padding: 30px;
+}
+.required::before {
+    content: '* ';
+}

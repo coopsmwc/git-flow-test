@@ -1,0 +1,112 @@
+.login-container, .emp-register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.change-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.login-wrapper, .emp-register-wrapper {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 30px;
+  background: #fff;
+}
+
+#login-section, #emp-register {
+  margin: 0 auto;
+  background: #EFF0F1;
+  .form-wrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+  h1 {
+    color: #1fa67b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .checkbox {
+    margin: 0 20px 20px 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    float: left;
+    &.show:before {
+      content: '\f00c';
+      color: #49546a;
+      font-size: 17px;
+      margin: 1px 0 0 3px;
+      position: absolute;
+      pointer-events: none;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+    }
+  }
+  .checkbox2.show:before {
+    content: '\f00c';
+    color: #49546a;
+    font-size: 17px;
+    margin: 1px 0 0 3px;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  .checkbox .character-checkbox, .checkbox2 .character-checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .checkbox .label, .checkbox2 .label {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .btn.btn-custom {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .forget {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+  }
+  h2 {
+    margin: 20px 0;
+    color: #4a556a;
+  }
+}
+
+.login-logo, .emp-register-logo {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.modal-footer.recover {
+  justify-content: center !important;
+  align-items: normal;
+}

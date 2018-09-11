@@ -1,0 +1,248 @@
+.form-control {
+  color: #212121;
+}
+
+.btn-custom {
+  font-size:16px;
+  background-color: #f49e52 !important;
+  border-color: transparent !important;
+  border-radius: 50px;
+  border: 0 !important;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 48px;
+  height: 48px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: 500;
+  outline: none !important;
+  box-shadow: none !important;
+  &:hover, &:focus {
+    background-color: #ec7c22 !important;
+    border-color: transparent !important;
+  }
+  &.confirm {
+    width: 50%;
+    margin-right: 20px;
+  }
+  &-secondary {
+    background-color: #fff;
+    border-color: #aeb2b5;
+    color: #4a556a;
+    padding: 0 20px;
+    border-radius: calc(48px/2);
+    line-height: 48px;
+    height: 48px;
+    &:hover {
+      border-color: #4a556a;
+      background-color: white;
+      color: #4a556a;
+    }
+    &.cancel {
+      width: 40% !important;
+    }
+  }
+}
+.edit-icons {
+  background: none !important;
+}
+
+.create-btn-holder {
+  padding: 20px 0;
+  display: inline-block;
+}
+/* Suspend account toggle switch */
+.toggle-switch {
+  margin: 0 auto;
+  width: 241px;
+  margin-top: 30px;
+  position: relative;
+  float: left;
+  label {
+    padding: 0;
+  }
+}
+input {
+  &#cb-switch-licence {
+    display: none;
+  }
+  &#cb-switch-suspend {
+    display: none;
+  }
+  &#cb-switch-renew {
+    display: none;
+  }
+}
+.switch-holder {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #aeb2b5;
+  padding: 20px 100px 20px 20px;
+    input[type="button"] {
+      padding: 0 30px;
+      margin-bottom: 20px;
+    }
+}
+.toggle-switch-suspend {  
+  label input {
+    + span {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      width: 6rem;
+      height: 2.5rem;
+      background: #bdc1c8;
+      border: 1px solid #eee;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: inset 0 0 5px #828282;
+      small {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.875rem;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+        top: 0.2rem;
+        left: 0.2rem;
+      }
+    }
+    &:checked + span {
+      background-color: #ff8800;
+      small {
+        left: 3.7rem;
+        transition: left .25s;
+      }
+    }
+  }
+  span:after {
+    content: "Suspended";
+    line-height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity .25s;
+    left: 6.6rem;
+    opacity: 0.5;
+    color: #6b7381;
+    font-family: 'Nunito', sans-serif;
+  }
+  label input:checked + span:after {
+    opacity: 1;
+  }
+}
+.toggle-switch-licence {  
+  label input {
+    + span {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      width: 6rem;
+      height: 2.5rem;
+      background: #bdc1c8;
+      border: 1px solid #eee;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: inset 0 0 5px #828282;
+      small {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.875rem;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+        top: 0.2rem;
+        left: 0.2rem;
+      }
+    }
+    &:checked + span {
+      background-color: #ff8800;
+      small {
+        left: 3.7rem;
+        transition: left .25s;
+      }
+    }
+  }
+  span:after {
+    content: "Started";
+    line-height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity .25s;
+    left: 6rem;
+    opacity: 0.5;
+    color: #6b7381;
+    font-family: 'Nunito', sans-serif;
+  }
+  label input:checked + span:after {
+    opacity: 1;
+  }
+}
+.toggle-switch-renew {  
+  label input {
+    + span {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      width: 6rem;
+      height: 2.5rem;
+      background: #bdc1c8;
+      border: 1px solid #eee;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: inset 0 0 5px #828282;
+      small {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.875rem;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+        top: 0.2rem;
+        left: 0.2rem;
+      }
+    }
+    &:checked + span {
+      background-color: #ff8800;
+      small {
+        left: 3.7rem;
+        transition: left .25s;
+      }
+    }
+  }
+  span:after {
+    content: "Auto-renew";
+    line-height: 2.5rem;
+    width: 7rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity .25s;
+    left: 6.5rem;
+    opacity: 0.5;
+    color: #6b7381;
+    font-family: 'Nunito', sans-serif;
+  }
+  label input:checked + span:after {
+    opacity: 1;
+  }
+}

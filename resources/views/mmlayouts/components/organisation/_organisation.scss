@@ -1,0 +1,163 @@
+.org-wrapper {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  flex-direction: column;
+  position: relative;
+  .button-holder {
+    width: 100%;
+    margin-top: 30px;
+    //padding-left: 30%;  
+    input[type="button"] {
+      float: right;
+      padding: 0 100px;
+      margin: 0px 10px 0;
+      cursor: pointer;
+    }
+  }
+  .org-logo {
+  width: 190px;
+  height: 190px;
+  position: relative;
+  border: 1px solid #aeb2b5;
+  padding: 20px;
+    img {
+    width: 150px;
+    height: 150px;
+    }
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 190px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        label {
+          margin-bottom: 0 !important;
+        }
+        .fas {
+        color: #bbbbbb;
+        font-size: 30px;
+        margin: 0 10px;
+        opacity: 0;
+        transition: .2s all;
+          &:hover{
+          font-size: 35px;
+          color: white;
+        }
+      }
+      &:hover {
+       background-color: rgba(0, 0, 0, 0.7);
+           .fas {
+        opacity: 1;
+      }
+    }
+  }
+  a { 
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.org-content_company {
+  width: 100% !important;
+}
+
+.org-content {
+  width: 70%;
+    &--name {
+      font-size: 40px;
+    }
+    &--company {
+      width: 100%;
+    }
+  &--stub {
+    font-size: 30px;
+    //margin-bottom: 40px;
+    color: #888;
+      div {
+        display: inline;
+      }
+      div:first-of-type {
+        color: #606060;
+      }
+  }
+  &--licences {
+    float: left;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  &--licences-used {
+    float: left;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  &--domains {
+    font-size: 20px;
+    padding-top: 20px;
+    &_title {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    div {
+        display: inline-block;
+      }
+      div:first-of-type {
+        color: #606060;
+        text-align: left
+      }
+      div:last-of-type {
+        text-align: left; 
+      }
+    .fas {
+      font-size: 25px;
+      line-height: 30px;
+      transition: all 200ms;
+      color: #bbbbbb;
+      margin-bottom: 10px;
+      vertical-align: middle;   
+      &:hover {
+        font-size: 30px;
+        line-height: 30px;
+        color: black;
+      }
+    }
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  .licence-number {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #888;
+  }
+}
+.licence-username {
+  word-break: break-all;
+}
+.start-date-label, .end-date-label {
+  font-size: 20px;
+  color: #606060;
+  margin-top: 20px;
+}
+.start-date, .end-date {
+  font-size: 24px;
+}
+.expired {
+  color: red;
+  font-weight: 700;
+}
+#cptc {
+  font-size: 24px;
+}

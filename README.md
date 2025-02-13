@@ -1,1 +1,1 @@
-Concourse test of GitHub hooks.
+Concourse test of GitHub hooks by mc3.
